@@ -1,6 +1,7 @@
 package net.hatsontv.enchantedfish;
 
 import com.mojang.logging.LogUtils;
+import net.hatsontv.enchantedfish.enchantment.ModEnchantments;
 import net.hatsontv.enchantedfish.item.ModCreativeModeTabs;
 import net.hatsontv.enchantedfish.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
@@ -30,6 +31,8 @@ public class EnchantedFish {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModEnchantments.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
