@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.MACKEREL.get());
                         pOutput.accept(ModItems.COOKED_MACKEREL.get());
                         pOutput.accept(ModItems.HOLY_MACKEREL.get());
+                        pOutput.accept(ModItems.SWORDFISH.get());
                     })
                     .build());
 

@@ -8,11 +8,7 @@ import net.minecraft.world.item.Item;
 
 public class ModTags {
 
-
-
     public static class Items {
-
-        public static final TagKey<Item> RAW_FISHES = tag("raw_fishes");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(EnchantedFish.MOD_ID, name));
