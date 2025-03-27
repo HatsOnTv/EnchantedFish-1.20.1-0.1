@@ -21,7 +21,7 @@ public class ModItems {
             () -> new SimpleFoiledItem(new Item.Properties().food(ModFoods.HOLY_MACKEREL).rarity(Rarity.EPIC)));
 
     public static final RegistryObject<Item> SWORDFISH = ITEMS.register("swordfish",
-            () -> new SwordItem(Tiers.DIAMOND, 3, -2.4f, new Item.Properties().rarity(Rarity.RARE)));
+            () -> new SwordItem(ModToolTiers.FISHTIER, 3, -2.4f, new Item.Properties().rarity(Rarity.RARE)));
                     //AttackDamageModifier is based on tool tier, AttackSpeedModifier has to be NEGATIVE because it has a base value of 4
 
     public static void register(IEventBus eventBus) {
