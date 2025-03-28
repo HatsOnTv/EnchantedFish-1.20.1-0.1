@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.hatsontv.enchantedfish.enchantment.ModEnchantments;
 import net.hatsontv.enchantedfish.item.ModCreativeModeTabs;
 import net.hatsontv.enchantedfish.item.ModItems;
+import net.hatsontv.enchantedfish.loot.ModLootModifiers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -33,6 +34,8 @@ public class EnchantedFish {
         ModItems.register(modEventBus);
 
         ModEnchantments.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
